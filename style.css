@@ -1,6 +1,6 @@
 html,
 body {
-	background-image: url("./twinkeaze-background.jpg");
+	background: url("./twinkeaze-background.jpg") no-repeat center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	/*max-width: 100%;*/
@@ -8,14 +8,25 @@ body {
 	font-family:  "PT Sans";
 	height: 100%;
 	max-height: 100%;
+  position: absolute;
+  min-height:100%;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+
+  -webkit-background-size: cover; /* Add in these */
+  -moz-background-size: cover;    /* four lines to */
+  -o-background-size: cover;      /* remove the white space*/
+  background-size: cover;     
 }
 
 .innerContent {
 	display: block;
 	margin: 0 auto;
-	width: 50%;
+	width: 100%;
 	text-align: center;
-	padding-top: 10%;
+	padding-top: 7%;
 	font-size: 24px;
 	font-weight: 200;
 	color: black;
@@ -87,8 +98,8 @@ a {
 }
 
 .opaque-bck {
-	padding: 20px;
-	width: 50%;
+	padding-top: 20px;
+	width: 100%;
 	position: absolute;
 	top: 30%;
 }
@@ -98,7 +109,7 @@ a {
 }
 
 .subtitle {
-	
+	padding-bottom: 20px;
 }
 
 .button {
